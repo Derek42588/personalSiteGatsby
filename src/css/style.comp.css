@@ -1,0 +1,46 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  box-sizing: border-box;
+  font-size: 2rem; }
+
+.Products {
+  background-color: orangered;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); }
+  .Products__product {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+  .Products__title {
+    grid-column: 1 / -1;
+    text-align: center; }
+
+.active {
+  color: orange;
+  text-decoration: none; }
+  .active:hover {
+    text-decoration: underline; }
+
+.navlink {
+  color: white;
+  text-decoration: none; }
+  .navlink:hover {
+    text-decoration: underline; }

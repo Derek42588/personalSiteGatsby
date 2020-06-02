@@ -1,0 +1,372 @@
+.Landing {
+
+    background-color: $color-secondary;
+    color: $color-primary;
+
+  display: grid;
+  overflow: hidden;
+  font-size: 2rem;
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  grid-template-rows: [full-start] min-content [center-start] repeat(11, [row-start] minmax(min-content, 14rem) [row-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  position: relative;
+
+  @include respond(bpSmall){
+    font-size: 1.75rem;
+  }
+  @include respond(micro){
+    font-size: 1.5rem;
+  }
+}
+
+.About {
+    &__shape {
+      width: 50rem;
+      height: 50rem;
+      -webkit-shape-outside: circle(50% at 50% 50%);
+      shape-outside: circle(50% at 50% 50%);
+      clip-path: circle(33% at 46% 39%);
+      grid-row: center-start / row-start 4;
+      grid-column: center-start / col-start 7;
+  
+      justify-self: center;
+  
+  
+      @include respond(bpSmall){
+        width: 40rem;
+        height: 40rem;
+      }
+  
+      @include respond(phone){
+        width: 40rem;
+        height: 40rem;
+      }
+  
+      @include respond(micro) {
+          width: 35rem;
+          height: 35rem;
+          grid-column: col-start 2/ full-end;
+          grid-row: row-start 1 / row-start 5;
+      }
+  
+      // @include respond(phone){
+      //   grid-column: col-start 5 / center-end;
+      // }
+  
+      &__img {
+        height: 100%;
+        backface-visibility: hidden;
+        image-orientation: from-image;
+        // transform: rotate(90deg);
+      }
+    }
+  
+    &__title {
+      &--main {
+        color: $color-primary;
+        grid-row: row-start 2 / span 1;
+        grid-column: col-start 5/ -1;
+        align-self: center;
+        justify-self: center;
+  
+        @include respond(micro) {
+          grid-row: row-start 3 / span 1;
+  grid-column: center-start/ full-end;
+  align-self: start;
+  padding-top: 1.5rem;
+          justify-self: start;
+          width: 100%;
+        }
+  
+      }
+  
+      &--submain {
+          grid-row: row-start 3 / span 1;
+          grid-column: col-start 5 / -1;
+          align-self: start;
+        justify-self: center;
+  
+        @include respond(micro) {
+          grid-row: row-start 3/ span 1;
+  grid-column: center-start / full-end;
+  align-self: center;
+  justify-self: start;
+  padding-top: 1.5rem;
+  width: 100%;
+  
+        }
+  
+      }
+      &--tools {
+        grid-column: full-start / full-end;
+        grid-row: row-end 4 / span 1;
+        justify-self: center;
+        align-self: center;
+        width: 100%;
+        text-align: center;
+    }
+    }
+  
+    &__blurb {
+      grid-row: row-end 3 / span 1;
+      grid-column: center-start / center-end;
+      align-self: center;
+      justify-self: center;
+  
+      color: $color-primary;
+  
+    }
+  
+    &__toolbox {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-row: row-end 5 / span 1;
+      grid-column: center-start / center-end;
+      grid-gap: 2rem;
+  
+      &__box{
+        display: grid;
+        grid-template-rows: min-content 1fr;
+  
+        &__icon{
+          justify-self: center;
+          width: 5rem;
+          fill: $color-quaternary-dark;
+          // margin-bottom: 1.5rem;
+          height: 10rem;
+        }
+  
+        &__text{
+          color: $color-primary;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .Contact{
+    grid-column: center-start / center-end;
+    grid-row: row-end 10 / span 1;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2rem;
+    grid-gap: 2rem;
+    
+    &__contact-title {
+        grid-column: center-start / center-end;
+        grid-row: row-end 9 / span 1;
+        justify-self: center;
+        align-self: center;
+
+        @include respond(phone) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    &__contact-box {
+        grid-column: 1 / -1;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        &__cta {
+            align-self: center;
+justify-self: end;
+padding-right: 2rem;
+        }
+
+        &__icon {
+            width: 5rem;
+                height: 5rem;
+                fill: $color-quaternary;
+        }
+    }
+
+}
+
+.Project {
+    grid-column: center-start / center-end;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 10vh) max-content;
+    padding: 2rem;
+    grid-gap: 1rem;
+  
+    
+    @include respond(bpSmall){
+      grid-template-rows: repeat(6, 10vh) max-content;
+  
+    }
+  
+    &--BSSC {
+      grid-row: row-end 7 / span 1;
+    }
+  
+    &--Riptide {
+      grid-row: row-end 8 / span 1;
+    }
+  
+    &__projects-title {
+      color: $color-primary;
+      grid-column: center-start / center-end;
+      grid-row: row-end 6 / span 1;
+      justify-self: center;
+      align-self: center;
+    }
+  
+    &__img-box {
+  
+      &--left {
+          grid-column: 1 / span 4;
+          grid-row: 1 / span 4;
+          @include respond(bpSmall){
+            grid-column: 2 / span 4;
+         
+           }
+          @include respond(micro) {
+            grid-column: 1 / -1;
+          }
+        }
+      &--right {
+          grid-column: 3 / -1;
+          grid-row: 1 / span 4;
+  
+          @include respond(bpSmall){
+            grid-column: 2 / span 4;
+         
+           }
+           @include respond(micro) {
+            grid-column: 1 / -1;
+          }
+        }
+      &__img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+          // grid-row: 1 / span 3;
+        }
+    }
+   
+  
+    &__title {
+      grid-row: 1 / span 1;
+  
+      color: $color-primary-light;
+      justify-self: center;
+      align-self: center;
+  
+      &--right {
+        grid-column: 5 / -1;
+  
+        @include respond(bpSmall){
+          grid-column: 1 / -1;
+          justify-self:center;
+          grid-row: 5 / span 1;
+       
+         }
+      }
+      &--left {
+        grid-column: 1 / span 2;
+        @include respond(bpSmall){
+          grid-column: 1 / -1;
+          justify-self:center;
+          grid-row: 5 / span 1;
+       
+         }
+      }
+    }
+  
+    &__subheader {
+      grid-row: 2 / span 2;
+      display: grid;
+      grid-template-columns: 1fr;
+      &--right {
+        grid-column: 5 / -1;
+  
+        @include respond(bpSmall){
+          grid-column: 1 / -1;
+          justify-self:center;
+          grid-row: 6 / span 1;
+       
+         }
+      }
+      &--left {
+        grid-column: 1 / span 2;
+  
+        @include respond(bpSmall){
+          grid-column: 1 / -1;
+          justify-self:center;
+          grid-row: 6 / span 1;
+       
+         }
+      }
+  
+      &__subtitle {
+        justify-self: center;
+        color: $color-primary;
+  
+        @include respond(bpSmall) {
+          display: none;
+        }
+      }
+      &__list {
+        list-style: none;
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        grid-gap: 3rem;
+        color: $color-primary-light;
+        font-weight: 700;
+  
+        @include respond(bpSmall){
+          grid-template-columns: 1fr 1fr 1fr;
+       
+         }
+      }
+    }
+  
+    &__main {
+      grid-column: 1 / -1;
+      grid-row: 5 / -1;
+      padding: 2rem;
+  
+      @include respond(bpSmall){
+  
+        grid-row: 7 / -1;
+     
+       }
+  
+      &__description {
+         
+          list-style: none;
+          padding: 1.5rem;
+  
+          &__item {
+              padding: 1rem;
+          }
+      }
+      &__links {
+          display: grid;
+          justify-items: center;
+          align-items: center;
+          color: $color-quaternary;
+  
+          grid-template-columns: 1fr 1fr;
+          &__link {
+              height: 100%;
+              text-decoration: none;
+              
+              &__icon {
+                  width: 5rem;
+                  height: 5rem;
+                  fill: $color-quaternary;
+              }
+          }
+      }
+    }
+  }
+  
+  
