@@ -5,7 +5,7 @@ snippetImageName: "6.2.20.snippet"
 fullImageName: "6.2.20.snippet"
 fullImageAlt: "Hello World"
 tags: ['learning']
-subtitle: ""
+subtitle: "Beginning"
 
 ---
 
