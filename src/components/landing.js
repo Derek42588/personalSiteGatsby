@@ -192,7 +192,7 @@ export default function Landing() {
               </button>
             </a>
             <a
-              href="https://vast-earth-35629.herokuapp.com"
+              href="https://bssc-dcp.herokuapp.com"
               className="Project__main__links__link Project__main__links__link--bssc-live"
             >
               <button className="button">
