@@ -8,12 +8,10 @@ tags: ['learning']
 subtitle: "Jumping In Headfirst"
 
 ---
-
-
 ####January 2019 - March 2019
 <br>
 <br>
-During this time, I was working temp jobs and otherwise studying in all the free time I could spare.  At the recommendation of a friend, I started with Wes Bos' course [React for Beginners](https://reactforbeginners.com/)
+During this time, I was working temp jobs and otherwise studying in all the free time I could spare.  At the recommendation of a friend, I started with Wes Bos' course <a href = "https://reactforbeginners.com/">React for Beginners</a>
 <br>
 <br>
 Knowing what I do now, I definitely would have started elsewhere.  I didn't know enough about HTML/CSS, and I was basically just coding by numbers by following along and gaining the barest of understanding of the basics of react (props, state, etc)
@@ -25,7 +23,7 @@ Bos is a good teacher, but for someone else starting off - or looking to learn R
 Granted, it's a beginner's course, but there are similar types of courses on Udemy that do a complete delve into a full language, library, etc., with 90+ hours of content and covering at least a bit of all of its facets.  This course, for example, doesn't touch Redux, Hooks, and more.
 <br>
 <br>
-What I did learn, though, was how powerful React could be.  It's fast, compact, powerful, and not too hard to dive into.  If you're interested in the end project of the course, github repo [here](https://github.com/Derek42588/CatchOfTheDay).  Live version of the site [here](https://heuristic-varahamihira-438b5e.netlify.app/)
+What I did learn, though, was how powerful React could be.  It's fast, compact, powerful, and not too hard to dive into.  If you're interested in the end project of the course, github repo <a href = "https://github.com/Derek42588/CatchOfTheDay">here</a>.  Live version of the site <a href = "https://heuristic-varahamihira-438b5e.netlify.app/">here</a>
 <br>
 <br>
 If I were starting over, I think I'd begin with a HTML + CSS course, and then move onto one for JavaScript.  The downsides to this, I'd think, are that you don't really get much of a sense of accomplishment with HTML/CSS projects.  You're limited in what you can do, and everyone and their mother can write it.  Moreover, you could just as easily produce something just as good -- or better -- with something like SquareSpace or Wordpress without even having to learn anything.
