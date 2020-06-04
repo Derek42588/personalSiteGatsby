@@ -22,5 +22,10 @@
         font-size: 2rem;
         color: $color-quaternary-light;
         padding: 2rem;
+
+        @include respond(phone) {
+            width: 15rem;
+            font-size: 1.5rem;
+        }
     }
 }
