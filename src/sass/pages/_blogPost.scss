@@ -23,6 +23,18 @@
     @include respond(phone) {
       font-size: 3rem;
     }
+    @include respond(micro) {
+      font-size: 2.5rem;
+    }
+  }
+
+  &__subtitle {
+    @include respond(phone) {
+      font-size: 2.25rem;
+    }
+    @include respond(micro) {
+      font-size: 1.75rem;
+    }
   }
 
   

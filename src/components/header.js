@@ -7,7 +7,7 @@ import IconPDF from "../assets/file-pdf.svg"
 import IconPhone from "../assets/mobile.svg"
 import IconEmail from "../assets/mail4.svg"
 
-import resume from "../media/DCP Resume 52120.pdf"
+import resume from "../media/DCP Resume 6420.pdf"
 
 const Header = ({ toggleShelf }) => (
   <div className="NavBar">

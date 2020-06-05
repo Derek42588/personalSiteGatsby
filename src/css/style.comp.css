@@ -332,6 +332,15 @@ body {
   @media only screen and (max-width: 37.5em) {
     .BlogPost__title {
       font-size: 3rem; } }
+  @media only screen and (max-width: 31.25em) {
+    .BlogPost__title {
+      font-size: 2.5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .BlogPost__subtitle {
+      font-size: 2.25rem; } }
+  @media only screen and (max-width: 31.25em) {
+    .BlogPost__subtitle {
+      font-size: 1.75rem; } }
   .BlogPost__image-box {
     width: 75%;
     justify-self: center;
