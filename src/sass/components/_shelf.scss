@@ -9,6 +9,13 @@
     display: grid;
     transition: all .4s;
 
+    ul {
+        margin-left: 0;
+        li {
+            margin-left: 0;
+        }
+    }
+
     &__list {
         display: grid;
         z-index: 850;

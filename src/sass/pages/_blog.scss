@@ -11,14 +11,24 @@
     text-align: center;
     // padding: 10rem 10rem 2rem 10rem;
     grid-column: 1 / -1;
+    font-size: 4rem;
     @include respond(phone){
       font-size: 3.5rem;
+   
+     }
+    @include respond(micro){
+      font-size: 3rem;
    
      }
   }
 
   &__postCount {
     text-align: center;
+    font-size: 2.5rem;
+    @include respond(phone){
+      font-size: 2rem;
+   
+     }
     grid-column: 1 / -1;
   }
 

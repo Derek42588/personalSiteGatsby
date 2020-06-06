@@ -21,6 +21,8 @@ Coding on my commute (public transit) also was never very good.  I snuck in some
 <br>
 <br>
 One of the things I've realized over and over is to recognize when you simply don't know enough, and then identify what you can do to fix that.  I still had basic knowledge, but little else.  Very little practical experience, and a lot of difficulty in doing anything more than little snippets, modeling off of course code-alongs.
+<br>
+<br>
 
 ####Focused Study
 <br>

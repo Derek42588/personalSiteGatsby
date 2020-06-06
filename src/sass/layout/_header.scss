@@ -44,6 +44,8 @@
           display: grid;
           grid-template-columns: repeat(4, 1fr);
           &__item {
+            // justify-self: center;
+            // align-self: center;
   
             &__icon {
               width: 2rem;
@@ -107,6 +109,7 @@
           text-align: center;
           cursor: pointer;
           height: 100%;
+          margin-top: 1.5rem;
           
   
         }

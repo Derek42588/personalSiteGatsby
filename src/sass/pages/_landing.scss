@@ -213,6 +213,8 @@ padding-right: 2rem;
       grid-row: row-end 6 / span 1;
       justify-self: center;
       align-self: center;
+      width: 100%;
+      text-align: center;
     }
   
     &__img-box {
@@ -252,6 +254,7 @@ padding-right: 2rem;
   
     &__title {
       grid-row: 1 / span 1;
+
   
       color: $color-primary-light;
       justify-self: center;
@@ -259,16 +262,19 @@ padding-right: 2rem;
   
       &--right {
         grid-column: 5 / -1;
-  
+        width: 100%;
+        text-align: center;
         @include respond(bpSmall){
           grid-column: 1 / -1;
           justify-self:center;
           grid-row: 5 / span 1;
-       
+          
          }
       }
       &--left {
         grid-column: 1 / span 2;
+        width: 100%;
+          text-align: center;
         @include respond(bpSmall){
           grid-column: 1 / -1;
           justify-self:center;
@@ -313,13 +319,16 @@ padding-right: 2rem;
       }
       &__list {
         list-style: none;
-        padding: 2rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-items: center;
         grid-gap: 3rem;
         color: $color-primary-light;
         font-weight: 700;
+        padding-top: 1rem;
+        width: 100%;
+        align-self: center;
+        justify-self: center;
   
         @include respond(bpSmall){
           grid-template-columns: 1fr 1fr 1fr;
