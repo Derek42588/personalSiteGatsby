@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql, StaticQuery, useStaticQuery } from "gatsby"
+import {  graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
 import IconHTML from "../assets/html5.svg"
@@ -20,7 +20,7 @@ import IconEmail from "../assets/mail4.svg"
 import resume from "../media/DCP Resume 6420.pdf"
 
 export default function Landing() {
-  const { bssc, riptide, headshot } = useStaticQuery(
+  const { bssc, riptide, headshot, swolebox } = useStaticQuery(
     graphql`
       query {
         bssc: file(relativePath: { eq: "bsscPic.PNG" }) {
@@ -32,6 +32,14 @@ export default function Landing() {
         }
 
         riptide: file(relativePath: { eq: "riptidePic.PNG" }) {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+
+        swolebox: file(relativePath: { eq: "swolebox.JPG" }) {
           childImageSharp {
             fluid {
               ...GatsbyImageSharpFluid
@@ -256,6 +264,75 @@ export default function Landing() {
             <a
               href="http://acriptide.herokuapp.com/"
               className="Project__main__links__link Project__main__links__link--Riptide-live"
+            >
+              <button className="button">
+                <IconSphere className="Project__main__links__link__icon" />
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="Project Project--Swolebox">
+        <figure className="Project__img-box Project__img-box--left Project__img--left">
+        <Img
+            fluid={swolebox.childImageSharp.fluid}
+            alt="Project Pic - Riptide"
+            className="Project__img-box__img Project__img-box__img--right Project__img--Swolebox"
+          />
+        </figure>
+
+        <h3 className="Project__title Project__title--Swolebox Project__title--right header-medium italic">
+          Hat Game
+        </h3>
+        <div className="Project__subheader Project__subheader--right Project__subheader--Swolebox">
+          <h4 className="Project__subheader__subtitle Project__subheader__subtitle--Swolebox header-small italic">
+            Made With...
+          </h4>
+          <ul className="Project__subheader__list  Project__subheader__list--Swolebox">
+            <li className="Project__subheader__list__item Project__subheader__list__item--Swolebox">
+              React
+            </li>
+            <li className="Project__subheader__list__item Project__subheader__list__item--Swolebox">
+              Sass
+            </li>
+            <li className="Project__subheader__list__item Project__subheader__list__item--Swolebox">
+              Redux
+            </li>
+            <li className="Project__subheader__list__item Project__subheader__list__item--Swolebox">
+              Firebase
+            </li>
+          </ul>
+        </div>
+        <div className="Project__main Project__main--Swolebox">
+          <ul className="Project__main__description Project__main__description--Swolebox">
+            <li className="Project__main__description__item Project__main__description__item--Swolebox">
+              Live game web app, similar to the app Heads Up
+            </li>
+            <li className="Project__main__description__item Project__main__description__item--Swolebox">
+              Real time data, synced with Firebase
+            </li>
+            <li className="Project__main__description__item Project__main__description__item--Swolebox">
+              Full authentication with Firebase, including social authentication
+            </li>
+            <li className="Project__main__description__item Project__main__description__item--Swolebox">
+              Live multiplayer
+            </li>
+            <li className="Project__main__description__item Project__main__description__item--Swolebox">
+              Instanced "game rooms"
+            </li>
+          </ul>
+          <div className="Project__main__links Project__links--Swolebox">
+            <a
+              href="https://github.com/Derek42588/swolebox"
+              className="Project__main__links__link Project__main__links__link--Swolebox-github"
+            >
+              <button className="button">
+                <IconGithub className="Project__main__links__link__icon" />
+              </button>
+            </a>
+            <a
+              href="https://swolebox-e2710.web.app/"
+              className="Project__main__links__link Project__main__links__link--Swolebox-live"
             >
               <button className="button">
                 <IconSphere className="Project__main__links__link__icon" />

@@ -6,6 +6,7 @@ fullImageName: "6.2.20.snippet"
 fullImageAlt: "Hello World"
 tags: ['learning']
 subtitle: "Beginning"
+snippetText: "Like many self taught developers before me, I'm going to attempt to write a blog detailing my journey.  I'd hope it could help someone else who stumbles onto my portfolio and blog, trying to reach the same goal that I am -- gaining a junior developer job without a degree.  This blog has two main goals: to detail the resources I've used to teach myself, and to force myself to post each day about at least one new thing I've learned."
 
 ---
 

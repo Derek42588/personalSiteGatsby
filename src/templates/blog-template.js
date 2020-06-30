@@ -69,6 +69,7 @@ export const query = graphql`
             date(formatString:"MMMM Do, YYYY")
             snippetImageName
             tags
+            snippetText
           }
           excerpt(pruneLength: 100)
         }

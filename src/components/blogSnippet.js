@@ -5,6 +5,7 @@ import IconTags from "../assets/price-tags.svg"
 
 const BlogSnippet = ({ post }) => {
   const tags = post.frontmatter.tags.join(', ')
+  let snippetString = post.frontmatter.snippetText.substring(0,200) + "..."
   return (
     <Link to = {`/posts${post.fields.slug}`}  className="BlogSnippet">   
 
@@ -28,7 +29,7 @@ const BlogSnippet = ({ post }) => {
       </div>
       </div>
       <p className="BlogSnippet__blurb">
-       {post.excerpt}
+       {snippetString}
       </p>
 
     </Link>

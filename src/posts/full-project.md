@@ -6,6 +6,7 @@ fullImageName: "bssc"
 fullImageAlt: "BSSC App"
 tags: ['learning']
 subtitle: "A Full, Robust Project"
+snippetText: "I had finished the University of Helsinki's Full Stack Open and had a few other courses under my belt.  I had done a few web apps and projects, and made a few aborted attempts at a larger, cohesive project with lots of functionality.  Now I was determined to finish a full, robust project, beginning to end."
 
 ---
 ####Dec 2019 - Feb 2020

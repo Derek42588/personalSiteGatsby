@@ -145,7 +145,7 @@
 
   .Contact{
     grid-column: center-start / center-end;
-    grid-row: row-end 10 / span 1;
+    grid-row: row-end 11 / span 1;
 
     display: grid;
     grid-template-columns: 1fr;
@@ -154,7 +154,7 @@
     
     &__contact-title {
         grid-column: center-start / center-end;
-        grid-row: row-end 9 / span 1;
+        grid-row: row-end 10 / span 1;
         justify-self: center;
         align-self: center;
 
@@ -205,6 +205,9 @@ padding-right: 2rem;
   
     &--Riptide {
       grid-row: row-end 8 / span 1;
+    }
+    &--Swolebox {
+      grid-row: row-end 9 / span 1;
     }
   
     &__projects-title {

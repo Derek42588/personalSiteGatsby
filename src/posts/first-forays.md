@@ -6,6 +6,7 @@ fullImageName: "CatchSnip"
 fullImageAlt: "Catch of the Day example"
 tags: ['learning']
 subtitle: "Jumping In Headfirst"
+snippetText: "During this time, I was working temp jobs and otherwise studying in all the free time I could spare.  At the recommendation of a friend, I started with Wes Bos' course React for Beginners"
 
 ---
 ####January 2019 - March 2019

@@ -6,6 +6,7 @@ fullImageName: "blackjackFull"
 fullImageAlt: "Blackjack React App"
 tags: ['learning']
 subtitle: "A Basic React Blackjack App"
+snippetText: "So, by this point, I had taken a few courses and was starting to understand some basics.  I believe around this time was when I tried to write my first portfolio site, written using Node, JS, and basic HTML/CSS.  Github repo found here"
 
 ---
 ####March 2019 - May 2019

@@ -6,6 +6,7 @@ fullImageName: "frustrationFull"
 fullImageAlt: "Frustrations"
 tags: ['learning']
 subtitle: "Running Into Brick Walls"
+snippetText: "A little knowledge is a dangerous thing.  I knew a bit of React, JS, HTML and CSS.  Where's my job, right?!  Well, I still couldn't really do much.  A lot of advice you get while starting is just keep making projects, always work on more, new, better."
 
 ---
 ####May 2019 - December 2019

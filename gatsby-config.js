@@ -14,6 +14,18 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     {
+      resolve:`gatsby-plugin-htaccess`,
+      options: {
+        custom: `
+        <IfModule mod_headers.c>
+        <FilesMatch "\.(html|json)$">
+            Header set Cache-Control "no-cache"
+        </FilesMatch>
+        </IfModule>
+        `,
+      },
+    },
+    {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/utils/typography`

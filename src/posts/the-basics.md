@@ -6,6 +6,7 @@ fullImageName: "theBasicsPic"
 fullImageAlt: "Color Palette"
 tags: ['learning']
 subtitle: "HTML, CSS, JavaScript"
+snippetText: "Picking up from the last post, I was now finished with my first online course in React, but a little stumped as to where to go next or how to apply anything I had just learned.  I had decided that I really needed to dive deeper into JavaScript, HTML and CSS, as the minimal knowledge I had of all those prior to beginning my self-study weren't really sufficient to start applying to bigger, more real-world level projects."
 
 ---
 ####March 2019 - June 2019
