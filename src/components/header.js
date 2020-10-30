@@ -7,7 +7,7 @@ import IconPDF from "../assets/file-pdf.svg"
 import IconPhone from "../assets/mobile.svg"
 import IconEmail from "../assets/mail4.svg"
 
-import resume from "../media/DCP Resume 6420.pdf"
+import resume from "../media/DCP Resume.pdf"
 
 const Header = ({ toggleShelf }) => (
   <div className="NavBar">
@@ -40,20 +40,20 @@ const Header = ({ toggleShelf }) => (
             </a>
           </li>
           <li className="NavBar__nav__item__sublist__item">
-              <a target="_blank" href={resume}>
-                <IconPDF className="NavBar__nav__item__sublist__item__icon" />
-              </a>
-            </li>
-            <li className="NavBar__nav__item__sublist__item">
-              <a href="tel:+1(201)400-9742">
-                <IconPhone className="NavBar__nav__item__sublist__item__icon" />
-              </a>
-            </li>
-            <li className="NavBar__nav__item__sublist__item">
-              <a href="mailto:derekpyle@gmail.com">
-                <IconEmail className="NavBar__nav__item__sublist__item__icon" />
-              </a>
-            </li>
+            <a target="_blank" href={resume}>
+              <IconPDF className="NavBar__nav__item__sublist__item__icon" />
+            </a>
+          </li>
+          <li className="NavBar__nav__item__sublist__item">
+            <a href="tel:+1(201)400-9742">
+              <IconPhone className="NavBar__nav__item__sublist__item__icon" />
+            </a>
+          </li>
+          <li className="NavBar__nav__item__sublist__item">
+            <a href="mailto:derekpyle@gmail.com">
+              <IconEmail className="NavBar__nav__item__sublist__item__icon" />
+            </a>
+          </li>
         </ul>
       </li>
       <li

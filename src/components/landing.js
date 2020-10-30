@@ -1,5 +1,5 @@
 import React from "react"
-import {  graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
 import IconHTML from "../assets/html5.svg"
@@ -16,8 +16,10 @@ import IconGithub from "../assets/github.svg"
 import IconPDF from "../assets/file-pdf.svg"
 import IconPhone from "../assets/mobile.svg"
 import IconEmail from "../assets/mail4.svg"
+import IconPhp from "../assets/php.svg"
+import IconTypescript from "../assets/typescript.svg"
 
-import resume from "../media/DCP Resume 6420.pdf"
+import resume from "../media/DCP Resume.pdf"
 
 export default function Landing() {
   const { bssc, riptide, headshot, swolebox } = useStaticQuery(
@@ -89,6 +91,18 @@ export default function Landing() {
           <IconJS className="About__toolbox__box__icon About__toolbox__box__icon--JS" />
           <p className="About__toolbox__box__text About__toolbox__box__text--JS">
             Javascript
+          </p>
+        </div>
+        <div className="About__toolbox__box">
+          <IconPhp className="About__toolbox__box__icon About__toolbox__box__icon--Sass" />
+          <p className="About__toolbox__box__text About__toolbox__box__text--Sass">
+            PHP
+          </p>
+        </div>
+        <div className="About__toolbox__box">
+          <IconTypescript className="About__toolbox__box__icon About__toolbox__box__icon--JS" />
+          <p className="About__toolbox__box__text About__toolbox__box__text--JS">
+            Typescript
           </p>
         </div>
         <div className="About__toolbox__box">
@@ -212,7 +226,7 @@ export default function Landing() {
       </div>
       <div className="Project Project--Riptide">
         <figure className="Project__img-box Project__img-box--right Project__img--right">
-        <Img
+          <Img
             fluid={riptide.childImageSharp.fluid}
             alt="Project Pic - Riptide"
             className="Project__img-box__img Project__img-box__img--left Project__img--Riptide"
@@ -274,7 +288,7 @@ export default function Landing() {
       </div>
       <div className="Project Project--Swolebox">
         <figure className="Project__img-box Project__img-box--left Project__img--left">
-        <Img
+          <Img
             fluid={swolebox.childImageSharp.fluid}
             alt="Project Pic - Riptide"
             className="Project__img-box__img Project__img-box__img--right Project__img--Swolebox"
