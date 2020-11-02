@@ -359,6 +359,17 @@ export default function Landing() {
         Contact Me
       </h4>
       <div className="Contact">
+        <div className="Contact__discord">
+          <p>
+            Join us on <a href="https://discord.gg/A6XhcDQ5Tm">discord!</a>
+          </p>
+          <p>
+            Created by myself and a friend, a programming channel with a focus
+            on junior devs, discussing strategies, coding challenges, job leads
+            and more!
+          </p>
+        </div>
+
         <div className="Contact__contact-box">
           <p className="Contact__contact-box__cta">Resume</p>
           <a target="_blank" href={resume} className="">

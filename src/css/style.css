@@ -465,7 +465,7 @@ body {
     .About__shape {
       width: 35rem;
       height: 35rem;
-      grid-column: col-start 2/ full-end;
+      grid-column: col-start 2 / full-end;
       grid-row: row-start 1 / row-start 5; } }
   .About__shape__img {
     height: 100%;
@@ -494,7 +494,7 @@ body {
   justify-self: center; }
   @media only screen and (max-width: 31.25em) {
     .About__title--submain {
-      grid-row: row-start 3/ span 1;
+      grid-row: row-start 3 / span 1;
       grid-column: center-start / full-end;
       align-self: center;
       justify-self: start;
@@ -575,11 +575,11 @@ body {
     .Project {
       grid-template-rows: repeat(6, 10vh) max-content; } }
   .Project--BSSC {
-    grid-row: row-end 7 / span 1; }
+    grid-row: row-end 9 / span 1; }
   .Project--Riptide {
     grid-row: row-end 8 / span 1; }
   .Project--Swolebox {
-    grid-row: row-end 9 / span 1; }
+    grid-row: row-end 7 / span 1; }
   .Project__projects-title {
     color: #706C61;
     grid-column: center-start / center-end;
