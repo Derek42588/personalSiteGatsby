@@ -18,6 +18,8 @@ import IconPhone from "../assets/mobile.svg"
 import IconEmail from "../assets/mail4.svg"
 import IconPhp from "../assets/php.svg"
 import IconTypescript from "../assets/typescript.svg"
+import IconLaravel from "../assets/laravel.svg"
+import IconBootstrap from "../assets/bootstrap.svg"
 
 import resume from "../media/DCP Resume.pdf"
 
@@ -95,7 +97,7 @@ export default function Landing() {
         </div>
         <div className="About__toolbox__box">
           <IconPhp className="About__toolbox__box__icon About__toolbox__box__icon--Sass" />
-          <p className="About__toolbox__box__text About__toolbox__box__text--Sass">
+          <p className="About__toolbox__box__text About__toolbox__box__text--PHP">
             PHP
           </p>
         </div>
@@ -125,13 +127,19 @@ export default function Landing() {
         </div>
         <div className="About__toolbox__box">
           <IconReact className="About__toolbox__box__icon About__toolbox__box__icon--Node" />
-          <p className="About__toolbox__box__text About__toolbox__box__text--Node">
+          <p className="About__toolbox__box__text About__toolbox__box__text--React">
             React
           </p>
         </div>
         <div className="About__toolbox__box">
+          <IconLaravel className="About__toolbox__box__icon About__toolbox__box__icon--Node" />
+          <p className="About__toolbox__box__text About__toolbox__box__text--Laravel">
+            Laravel
+          </p>
+        </div>
+        <div className="About__toolbox__box">
           <IconMongo className="About__toolbox__box__icon About__toolbox__box__icon--Mongo" />
-          <p className="About__toolbox__box__text About__toolbox__box__text--JS">
+          <p className="About__toolbox__box__text About__toolbox__box__text--MongoDB">
             MongoDB
           </p>
         </div>
@@ -145,6 +153,12 @@ export default function Landing() {
           <IconSass className="About__toolbox__box__icon About__toolbox__box__icon--Sass" />
           <p className="About__toolbox__box__text About__toolbox__box__text--Sass">
             Sass
+          </p>
+        </div>
+        <div className="About__toolbox__box">
+          <IconBootstrap className="About__toolbox__box__icon About__toolbox__box__icon--Node" />
+          <p className="About__toolbox__box__text About__toolbox__box__text--Bootstrap">
+            Bootstrap
           </p>
         </div>
       </div>
