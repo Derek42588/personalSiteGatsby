@@ -361,6 +361,7 @@ body {
   padding: 3rem;
   background-color: #99C5B5;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   color: #706C61;
