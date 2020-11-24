@@ -24,10 +24,25 @@ import IconBootstrap from "../assets/bootstrap.svg"
 import resume from "../media/DCP Resume.pdf"
 
 export default function Landing() {
-  const { bssc, riptide, headshot, swolebox } = useStaticQuery(
+  const {
+    bssc,
+    riptide,
+    headshot,
+    swolebox,
+    livingDesigns,
+    denise,
+  } = useStaticQuery(
     graphql`
       query {
         bssc: file(relativePath: { eq: "bsscPic.PNG" }) {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+
+        livingDesigns: file(relativePath: { eq: "livingDesigns.jpg" }) {
           childImageSharp {
             fluid {
               ...GatsbyImageSharpFluid
@@ -44,6 +59,14 @@ export default function Landing() {
         }
 
         swolebox: file(relativePath: { eq: "swolebox.JPG" }) {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+
+        denise: file(relativePath: { eq: "denise.jpg" }) {
           childImageSharp {
             fluid {
               ...GatsbyImageSharpFluid
@@ -166,17 +189,17 @@ export default function Landing() {
         Projects
       </h4>
       <div className="Project Project--BSSC">
-        <figure className="Project__img-box Project__img-box--left Project__img--left">
+        <figure className="Project__img-box Project__img-box--right Project__img--right">
           <Img
             fluid={bssc.childImageSharp.fluid}
             alt="Project Pic - BSSC"
-            className="Project__img-box__img Project__img-box__img--left Project__img--BSSC"
+            className="Project__img-box__img Project__img-box__img--right Project__img--BSSC"
           />
         </figure>
-        <h3 className="Project__title Project__title--bssc Project__title--right header-medium italic">
+        <h3 className="Project__title Project__title--bssc Project__title--left header-medium italic">
           BSSC
         </h3>
-        <div className="Project__subheader Project__subheader--right Project__subheader--bssc">
+        <div className="Project__subheader Project__subheader--left Project__subheader--bssc">
           <h4 className="Project__subheader__subtitle Project__subheader__subtitle--bssc header-small italic">
             Made With...
           </h4>
@@ -239,18 +262,18 @@ export default function Landing() {
         </div>
       </div>
       <div className="Project Project--Riptide">
-        <figure className="Project__img-box Project__img-box--right Project__img--right">
+        <figure className="Project__img-box Project__img-box--left Project__img--left">
           <Img
             fluid={riptide.childImageSharp.fluid}
             alt="Project Pic - Riptide"
-            className="Project__img-box__img Project__img-box__img--left Project__img--Riptide"
+            className="Project__img-box__img Project__img-box__img--right Project__img--Riptide"
           />
         </figure>
 
-        <h3 className="Project__title Project__title--Riptide Project__title--left header-medium italic">
+        <h3 className="Project__title Project__title--Riptide Project__title--right header-medium italic">
           Riptide
         </h3>
-        <div className="Project__subheader Project__subheader--left Project__subheader--Riptide">
+        <div className="Project__subheader Project__subheader--right Project__subheader--Riptide">
           <h4 className="Project__subheader__subtitle Project__subheader__subtitle--Riptide header-small italic">
             Made With...
           </h4>
@@ -361,6 +384,71 @@ export default function Landing() {
             <a
               href="https://swolebox-e2710.web.app/"
               className="Project__main__links__link Project__main__links__link--Swolebox-live"
+            >
+              <button className="button">
+                <IconSphere className="Project__main__links__link__icon" />
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="Project Project--LDI">
+        <figure className="Project__img-box Project__img-box--right Project__img--right">
+          <Img
+            fluid={livingDesigns.childImageSharp.fluid}
+            alt="Project Pic - LDI"
+            className="Project__img-box__img Project__img-box__img--left Project__img--LDI"
+          />
+        </figure>
+
+        <h3 className="Project__title Project__title--LDI Project__title--left header-medium italic">
+          Living Designs, Inc.
+        </h3>
+        <div className="Project__subheader Project__subheader--left Project__subheader--LDI">
+          <h4 className="Project__subheader__subtitle Project__subheader__subtitle--Riptide header-small italic">
+            Made With...
+          </h4>
+          <ul className="Project__subheader__list  Project__subheader__list--LDI">
+            <li className="Project__subheader__list__item Project__subheader__list__item--LDI">
+              Laravel
+            </li>
+            <li className="Project__subheader__list__item Project__subheader__list__item--LDI">
+              PHP
+            </li>
+            <li className="Project__subheader__list__item Project__subheader__list__item--LDI">
+              MySQL
+            </li>
+            <li className="Project__subheader__list__item Project__subheader__list__item--LDI">
+              Sass
+            </li>
+          </ul>
+        </div>
+        <div className="Project__main Project__main--LDI">
+          <ul className="Project__main__description Project__main__description--LDI">
+            <li className="Project__main__description__item Project__main__description__item--LDI">
+              Contact page and blog for a Landscape Design business
+            </li>
+            <li className="Project__main__description__item Project__main__description__item--LDI">
+              Custom, authenticated blog allowing client to upload images and
+              post to his live site at any time
+            </li>
+            <li className="Project__main__description__item Project__main__description__item--LDI">
+              SQL DB hosted on live server, with routine, programmed backups of
+              client posts + other data
+            </li>
+          </ul>
+          <div className="Project__main__links Project__links--LDI">
+            <a
+              href="https://github.com/Derek42588/livingdesigns"
+              className="Project__main__links__link Project__main__links__link--LDI-github"
+            >
+              <button className="button">
+                <IconGithub className="Project__main__links__link__icon" />
+              </button>
+            </a>
+            <a
+              href="https://livingdesignsinc.com"
+              className="Project__main__links__link Project__main__links__link--LDI-live"
             >
               <button className="button">
                 <IconSphere className="Project__main__links__link__icon" />

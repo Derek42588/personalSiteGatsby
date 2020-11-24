@@ -536,14 +536,14 @@ body {
 
 .Contact {
   grid-column: center-start / center-end;
-  grid-row: row-end 11 / span 1;
+  grid-row: row-end 13 / span 1;
   display: grid;
   grid-template-columns: 1fr;
   padding: 2rem;
   grid-gap: 2rem; }
   .Contact__contact-title {
     grid-column: center-start / center-end;
-    grid-row: row-end 10 / span 1;
+    grid-row: row-end 12 / span 1;
     justify-self: center;
     align-self: center; }
     @media only screen and (max-width: 37.5em) {
@@ -575,8 +575,10 @@ body {
     .Project {
       grid-template-rows: repeat(6, 10vh) max-content; } }
   .Project--BSSC {
-    grid-row: row-end 9 / span 1; }
+    grid-row: row-end 10 / span 1; }
   .Project--Riptide {
+    grid-row: row-end 9 / span 1; }
+  .Project--LDI {
     grid-row: row-end 8 / span 1; }
   .Project--Swolebox {
     grid-row: row-end 7 / span 1; }

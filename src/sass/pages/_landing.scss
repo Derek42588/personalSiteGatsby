@@ -5,14 +5,18 @@
   display: grid;
   overflow: hidden;
   font-size: 2rem;
-  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr) [center-start] repeat(
       8,
       [col-start] minmax(min-content, 14rem) [col-end]
-    ) [center-end] minmax(6rem, 1fr) [full-end];
-  grid-template-rows: [full-start] min-content [center-start] repeat(
+    )
+    [center-end] minmax(6rem, 1fr) [full-end];
+  grid-template-rows:
+    [full-start] min-content [center-start] repeat(
       11,
       [row-start] minmax(min-content, 14rem) [row-end]
-    ) [center-end] minmax(6rem, 1fr) [full-end];
+    )
+    [center-end] minmax(6rem, 1fr) [full-end];
   position: relative;
 
   @include respond(bpSmall) {
@@ -145,7 +149,7 @@
 
 .Contact {
   grid-column: center-start / center-end;
-  grid-row: row-end 11 / span 1;
+  grid-row: row-end 13 / span 1;
 
   display: grid;
   grid-template-columns: 1fr;
@@ -154,7 +158,7 @@
 
   &__contact-title {
     grid-column: center-start / center-end;
-    grid-row: row-end 10 / span 1;
+    grid-row: row-end 12 / span 1;
     justify-self: center;
     align-self: center;
 
@@ -197,10 +201,13 @@
   }
 
   &--BSSC {
-    grid-row: row-end 9 / span 1;
+    grid-row: row-end 10 / span 1;
   }
 
   &--Riptide {
+    grid-row: row-end 9 / span 1;
+  }
+  &--LDI {
     grid-row: row-end 8 / span 1;
   }
   &--Swolebox {
