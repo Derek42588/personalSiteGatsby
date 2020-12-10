@@ -203,7 +203,7 @@ export default function Landing() {
         <div className="About__toolbox__box">
           <IconPostgres className="About__toolbox__box__icon About__toolbox__box__icon--Postgres" />
           <p className="About__toolbox__box__text About__toolbox__box__text--Postgres">
-          PostgreSQL
+          Postgres
           </p>
         </div>
         <div className="About__toolbox__box">
